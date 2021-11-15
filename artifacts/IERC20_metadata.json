@@ -1,0 +1,266 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC20.sol": "IERC20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Accesslist.sol": {
+			"keccak256": "0xc3f273b82bc308d1db08613c1c93201f149abbf00aa830e4e42e249f0d4df6ac",
+			"urls": [
+				"bzz-raw://86bdddebc44eb03dd2da9d66a9639cb57a6e4aafecd16b95df3055e48c6efd66",
+				"dweb:/ipfs/QmatMQqvLqtfD9HpcayN5LW1Z4mjEWwWst7iuQmjbwgfGj"
+			]
+		},
+		"BlacklistAdminRole.sol": {
+			"keccak256": "0xc49ad798c03d087168665dc1f180b10a26d97a71ae9659d7ad744008d6ee2b37",
+			"urls": [
+				"bzz-raw://5ed503ef73332d3d039916a371f7be6fd0ec9c4dcbfa1651bec0152b57cf2169",
+				"dweb:/ipfs/QmaMnR5ybT6dXeGiDbRYsuRk1dNoArhKhBhMgn897qDPYM"
+			]
+		},
+		"Context.sol": {
+			"keccak256": "0xcfdca645879fefa5091189cb55a39e1d547ea8d1f826d83557797c4be3e70657",
+			"urls": [
+				"bzz-raw://90f03484ef66ffa51ab861a75c313997b38447206273bff426eb6738e2d5fcef",
+				"dweb:/ipfs/QmbLJWL3mxuj6Gr5WFGaQz6p9D96uAVAFLT2myzyjFEddq"
+			]
+		},
+		"ERC20.sol": {
+			"keccak256": "0x5c0af44d72f6d9aa56effacabfac0b385552c07cab1f4b85e6502662d6e22955",
+			"urls": [
+				"bzz-raw://c12c1f2eb94f2f2b02a671720217608fb9c802e6d706a5c3635daa0259ccf04f",
+				"dweb:/ipfs/QmfD1k6ATx2HgAhyr8ydafMSUq7WYd8hZ9Q7MQ7VLncrAL"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0xebd64e07157ddf53f526baab174d64672c875504241f5cdb5960138f701821e0",
+			"urls": [
+				"bzz-raw://cff5530f04529b10794ca37ea343024b31c691bc380e6c42c1a24500f63ebcbb",
+				"dweb:/ipfs/QmeAJwuCpG96RVpEPF6tDgPkJjP3ZKERYE5ALRNBnyBGTs"
+			]
+		},
+		"Roles.sol": {
+			"keccak256": "0xccf025abbc57633d94672c449eb71770659d1dab94e02654b3f0a70f97fcbbdf",
+			"urls": [
+				"bzz-raw://cc80c31c3084bff70eac4ce92d3bcd1efee4b11fd69622adb3b48f97a9976987",
+				"dweb:/ipfs/QmSwyaHtB2KdG9dkqYaTACjRw9CNKCNre3SgH6fBhysSRo"
+			]
+		},
+		"WhitelistAdminRole.sol": {
+			"keccak256": "0x110d6dae67934dba4034bab9f7f15a664b91ac2858efed8fcd4e12b8c09220d2",
+			"urls": [
+				"bzz-raw://8713e63553afcd0bafa56a4deb87dd16fa44ce16075efe3ba50d24691bfe4dfa",
+				"dweb:/ipfs/QmWw25bRm1Yo1cRsGV7HL3GtQHzpCJG6isik4weY8hNbwX"
+			]
+		}
+	},
+	"version": 1
+}
